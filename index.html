@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lana Music</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="music-player">
+        <button id="playlist">
+            <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <img id="song-image" src="image/norman.png" />
+        <div class="song-details">
+            <p id="song-name">Norman fucking Rockwell</p>
+            <p id="song-artist">Lana Del Rey</p>
+        </div>
+        <div class="player-options">
+            <button id="shuffle">
+                <i class="fa-solid fa-shuffle"></i>
+            </button>
+            <button id="prev">
+                <i class="fa-solid fa-backward-step"></i>
+            </button>
+            <button id="play">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button id="pause" class="hide">
+                <i class="fa-solid fa-pause"></i>
+            </button>
+            <button id="next">
+                <i class="fa-solid fa-forward-step"></i>
+            </button>
+            <button id="repeat">
+                <i class="fa-solid fa-repeat"></i>
+            </button>
+        </div>
+        <audio id="audio" preload="metadata"></audio>
+        <div id="progress-bar">
+            <div id="current-progress"></div>
+        </div>
+        <div class="time-container">
+            <span id="current-time">0:00</span>
+            <span id="max-duration">0:00</span>
+        </div>
+        <div id="playlist-container" class="hide">
+            <button id="close-button">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul id="playlist-songs"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
