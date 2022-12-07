@@ -153,7 +153,6 @@ li {
     display: flex;
     align-items: center;
     margin: 1em 0;
-    cursor: pointer;
 }
 
 .playlist-song-details {
@@ -163,6 +162,11 @@ li {
 .playlist-song-details>span {
     display: block;
     color: #ffffff;
+}
+
+.playlist-song-details>span:hover {
+    color: rgb(228, 228, 66);
+    cursor: pointer;
 }
 
 #playlist-song-artist-album {
